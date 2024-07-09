@@ -155,7 +155,7 @@ exports.register = async (req, res, next) => {
           .json({
             success: true,
             user,
-            token,
+            token: token,
           })
       );
     }
@@ -243,7 +243,7 @@ exports.login = async (req, res, next) => {
       .json({
         success: true,
         user,
-        token,
+        token: token,
       });
   } catch (error) {
     next(new ErrorHandler(error.message, 500));
