@@ -8,7 +8,9 @@ const LoadUserWhenToken = async ({ dispatch, ACTIONS }) => {
 
     const { data } = await axios.get(`${API_BASE_URL}/me`, {
       withCredentials: true,
-      header: { Authorization: `Bearer ${token}` },
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     });
 
     dispatch({
