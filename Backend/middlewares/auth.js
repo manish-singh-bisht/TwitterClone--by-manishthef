@@ -5,6 +5,7 @@ const ErrorHandler = require("../utils/ErrorHandler");
 //Authentication of token received while login
 exports.isAuthenticated = async (req, res, next) => {
   try {
+    console.log(req.headers);
     const authHeader = req.headers.Authorization;
 
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
