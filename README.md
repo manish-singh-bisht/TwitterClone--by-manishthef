@@ -92,10 +92,10 @@ https://github.com/manish-singh-bisht/TwitterClone-by-manishthef/assets/11449348
 
 Here are the steps to run the project locally.
 
-1. Clone the repository
+1. Fork the Repository and clone the repository
 
 ```
- git clone https://github.com/manish-singh-bisht/TwitterClone--by-manishthef.git
+ git clone https://github.com/your-username/TwitterClone-by-manishthef.git
 ```
 
 2. Install dependencies
