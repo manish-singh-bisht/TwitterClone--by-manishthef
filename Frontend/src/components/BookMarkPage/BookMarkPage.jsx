@@ -15,6 +15,7 @@ import InfiniteScrollWrapper from "../CommonPostComponent/InfiniteScrollWrapper"
 import useModal from "../../CustomHooks/useModal";
 import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../../../config";
+import bookmarksNone from '../../../Public/images/bookmarksNone.png';
 
 const BookMarkPage = () => {
   // this is just for showing the posts that were bookmarked by the logged in user, to see how the number of the bookmark is being changed or from where the api call is being made to mark a post as bookmark, refer to Frontend\src\components\CommonPostComponent\BookMark.jsx.
@@ -177,7 +178,7 @@ const BookMarkPage = () => {
               <div className="mt-[4.3rem] flex flex-col items-center justify-center">
                 <img
                   className="h-[10.6rem]"
-                  src="../../../images/bookmarksNone.png"
+                  src={bookmarksNone}
                   alt="no bookmark image"
                 />
                 <div className="text-center text-[2.1rem] font-bold">
