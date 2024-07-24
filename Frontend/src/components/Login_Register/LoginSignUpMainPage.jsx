@@ -2,7 +2,7 @@ import React, { Suspense, memo } from "react";
 import { TwitterIconInLoginSignupMainPage } from "../SVGs/SVGs";
 import Loader from "../Loader/Loader";
 import useModal from "../../CustomHooks/useModal";
-
+import twitterImage from '../../Public/images/twitter.jpg';
 const SignUpOption = React.lazy(() => import("./SignUpOption"));
 const LoginOptionModal = React.lazy(() => import("./LoginOptionModal"));
 
@@ -14,7 +14,7 @@ const LoginSignUpMainPage = () => {
         <>
             <main className=" flex gap-3 overflow-auto xl:gap-8">
                 <div className="hidden h-[100vh] w-[60vw] lg:block">
-                    <img src="../../../images/twitter.jpg" alt="twitter logo" className="h-full" />
+                    <img src={twitterImage} alt="twitter logo" className="h-full" />
                 </div>
                 <div className="flex w-full flex-col justify-center  lg:w-[38vw]">
                     <div className="h-[70vh]flex flex-col  p-3 align-middle lg:p-0 lg:max-xl:mt-[-4rem]">
