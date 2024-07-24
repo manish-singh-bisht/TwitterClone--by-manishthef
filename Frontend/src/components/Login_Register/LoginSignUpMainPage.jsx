@@ -2,7 +2,7 @@ import React, { Suspense, memo } from "react";
 import { TwitterIconInLoginSignupMainPage } from "../SVGs/SVGs";
 import Loader from "../Loader/Loader";
 import useModal from "../../CustomHooks/useModal";
-import twitterImage from '../../Public/images/twitter.jpg';
+import twitterImage from '../../../Public/images/twitter.jpg';
 const SignUpOption = React.lazy(() => import("./SignUpOption"));
 const LoginOptionModal = React.lazy(() => import("./LoginOptionModal"));
 
